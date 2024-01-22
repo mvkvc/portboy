@@ -1,5 +1,4 @@
-import { register, run } from "./main";
-import { z } from "zod";
+import { z, register, run } from "./main";
 
 function add(x: number, y: number) {
     return x + y
@@ -16,5 +15,4 @@ const registry = register([
 
 run(registry);
 
-// Run this in IEX
 // Portboy.run_exit({"/usr/bin/js", ["./clients/js/out/example.js"]}, "add", %{x: 1, y: 2})
