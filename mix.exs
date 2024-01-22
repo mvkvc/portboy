@@ -5,7 +5,7 @@ defmodule Portboy.MixProject do
     [
       app: :portboy,
       description: "Easily call out to other languages from Elixir.",
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.15",
       start_permanent: Mix.env() == :prod,
       deps: deps(),

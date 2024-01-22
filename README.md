@@ -14,7 +14,7 @@ See the READMEs in `./clients` for examples.
 ```elixir
 def deps do
   [
-    {:portboy, "~> 0.1.0"}
+    {:portboy, ">= 0.0.0"}
   ]
 end
 ```
