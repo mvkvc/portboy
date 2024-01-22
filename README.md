@@ -4,9 +4,9 @@ Easily call out to other languages from Elixir.
 
 ## Languages
 
-See the READMEs in `./clients` for examples.
+See the READMEs in `./clients` for [examples](https://github.com/mvkvc/portboy/tree/main/clients).
 
-- [X] [JS](https://github.com/mvkvc/portboy/tree/main/clients/js)
+- [X] [JS](https://www.npmjs.com/package/portboy)
 - [ ] Python
 
 ## Installation
