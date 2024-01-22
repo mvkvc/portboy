@@ -1,6 +1,5 @@
 defmodule Portboy do
   alias Portboy.Worker
-  require Logger
 
   def child(name, command), do: {Worker, name: name, command: command}
 

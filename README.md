@@ -2,21 +2,19 @@
 
 Easily call out to other languages from Elixir.
 
-To try it out open a REPL in the project root with `iex -S mix` and run `Portboy.run_exit({"/usr/bin/js", ["./clients/js/out/example.js"]}, "add", %{x: 1, y: 2})` (substituting the path to your installation of NodeJS as needed).
-
 ## Languages
 
-- [X] JS
+See the READMEs in `./clients` for examples.
+
+- [X] [JS](https://github.com/mvkvc/portboy/tree/main/clients/js)
 - [ ] Python
-- [ ] Ruby
-- [ ] Julia
 
 ## Installation
 
 ```elixir
 def deps do
   [
-    {:portboy, :git, "https://github.com/mvkvc/portboy.git"}
+    {:portboy, "~> 0.1.0"}
   ]
 end
 ```

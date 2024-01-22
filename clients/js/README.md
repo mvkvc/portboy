@@ -1,4 +1,4 @@
-# portboy/clients/js
+# portboy
 
 This is the JavaScript client for the [Portboy](https://hex.pm/packages/portboy) Elixir library.
 
@@ -23,5 +23,7 @@ const registry = register([
 run(registry);
 ```
 ```elixir
-Portboy.run_exit({"/usr/bin/js", ["./clients/js/out/example.js"]}, "add", %{x: 1, y: 2})
+iex(1)> Portboy.run_exit({"/usr/bin/js", ["./clients/js/out/example.js"]}, "add", %{x: 1, y: 2})
+
+{:ok, 3}
 ```

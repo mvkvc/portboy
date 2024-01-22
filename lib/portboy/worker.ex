@@ -1,14 +1,12 @@
 defmodule Portboy.Worker do
   use GenServer
 
+  # Client
+
   def start_link(opts = [command: _command]) do
     name = Keyword.fetch(opts, :name)
     link_opts = if name, do: [name: name], else: []
     GenServer.start_link(__MODULE__, opts, link_opts)
-  end
-
-  def encode_input(function, arguments) do
-    Jason.encode!(%{name: function, arguments: arguments})
   end
 
   def call(server, function, arguments) do
@@ -20,11 +18,15 @@ defmodule Portboy.Worker do
     end
   end
 
+  defp encode_input(function, arguments) do
+    Jason.encode!(%{name: function, arguments: arguments})
+  end
+
   def kill(server) do
     Process.send(server, :kill, [])
   end
 
-  #
+  # Server
 
   def init(opts) do
     command = Keyword.fetch!(opts, :command)
