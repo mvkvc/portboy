@@ -1,4 +1,5 @@
 out/
+src/example.ts
 
 # Temporary files, for example, from tests.
 /tmp/

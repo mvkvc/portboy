@@ -1,6 +1,6 @@
 # portboy/clients/js
 
-This is the JavaScript client for the Portboy Elixir library: https://hex.pm/packages/portboy.
+This is the JavaScript client for the [Portboy](https://hex.pm/packages/portboy) Elixir library.
 
 ## Example
 
