@@ -1,6 +1,6 @@
 # portboy
 
-Easily call out to other languages from Elixir.
+Easily call other languages from Elixir through Ports with runtime validation.
 
 ## Languages
 
